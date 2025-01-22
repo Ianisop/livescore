@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.livescore.livescore.OpretKampController">
+   <children>
+      <Label layoutX="238.0" layoutY="39.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Opret Kamp" />
+      <Button layoutX="215.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="25.0" prefWidth="162.0" text="Tilbage" />
+      <Button fx:id="annuller" layoutX="315.0" layoutY="305.0" text="Annuller" />
+      <Label layoutX="149.0" layoutY="158.0" text="Hjemmehold" />
+      <ComboBox fx:id="hjemmeHold" layoutX="227.0" layoutY="154.0" prefHeight="25.0" prefWidth="149.0" />
+      <ComboBox fx:id="gaesteHold" layoutX="226.0" layoutY="217.0" prefHeight="25.0" prefWidth="151.0" />
+      <Label layoutX="170.0" layoutY="221.0" text="Udehold" />
+      <Button fx:id="opretKamp" layoutX="216.0" layoutY="305.0" onAction="#handleCreateMatch" prefHeight="25.0" prefWidth="88.0" text="Opret kamp" />
+   </children>
+</AnchorPane>
